@@ -1,5 +1,8 @@
 CREATE DATABASE employees;
+GO
 
+USE employees;
+GO
 
 drop table if exists salesman;
 CREATE TABLE salesman (
