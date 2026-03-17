@@ -1,0 +1,8 @@
+$kind: http-request
+name: Get Races by Location
+method: GET
+url: '{{baseUrl}}:5000/race'
+order: 2000
+queryParams:
+  - key: location
+    value: Monaco

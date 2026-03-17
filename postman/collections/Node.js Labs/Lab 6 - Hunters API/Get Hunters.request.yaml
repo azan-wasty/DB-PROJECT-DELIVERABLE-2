@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Hunters
+method: GET
+url: '{{baseUrl}}:5000/hunters'
+order: 3000

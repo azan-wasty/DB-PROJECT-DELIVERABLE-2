@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Beyonders
+method: GET
+url: '{{baseUrl}}:5000/beyonders'
+order: 2000

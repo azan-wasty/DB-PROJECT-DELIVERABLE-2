@@ -1,0 +1,4 @@
+$kind: collection
+name: Lab 2 - Customers API
+description: Customers API running on port 5000
+order: 2000

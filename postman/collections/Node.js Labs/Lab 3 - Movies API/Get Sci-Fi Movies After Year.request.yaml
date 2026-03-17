@@ -1,0 +1,8 @@
+$kind: http-request
+name: Get Sci-Fi Movies After Year
+method: GET
+url: '{{baseUrl}}:5000/sci-fi'
+order: 2000
+queryParams:
+  - key: after
+    value: '2000'

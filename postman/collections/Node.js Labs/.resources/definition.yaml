@@ -1,0 +1,6 @@
+$kind: collection
+name: Node.js Labs
+description: Collection of Node.js lab APIs with requests for each lab
+variables:
+  - key: baseUrl
+    value: http://localhost

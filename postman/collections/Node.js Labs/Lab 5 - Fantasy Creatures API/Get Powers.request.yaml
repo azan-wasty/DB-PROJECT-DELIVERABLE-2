@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Powers
+method: GET
+url: '{{baseUrl}}:5000/powers'
+order: 3000
