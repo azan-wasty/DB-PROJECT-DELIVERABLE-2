@@ -1,3 +1,4 @@
+const http = require("http");
 const express = require("express");
 const { connectDB } = require("./db");
 const routes = require("./routes");
@@ -10,6 +11,7 @@ connectDB();
 
 app.use("/", routes);
 
-app.listen(5000, () => {
-    console.log("Server running on port 5000");
+const server = http.createServer(app);
+server.listen(5002, () => {
+    console.log("Server running on port 5002");
 });
