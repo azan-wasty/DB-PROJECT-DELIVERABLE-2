@@ -1,0 +1,4 @@
+$kind: collection
+name: Lab 6 - Hunters API
+description: Hunters API running on port 5000
+order: 6000

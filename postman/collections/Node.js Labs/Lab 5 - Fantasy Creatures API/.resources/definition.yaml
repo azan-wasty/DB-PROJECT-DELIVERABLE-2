@@ -1,0 +1,4 @@
+$kind: collection
+name: Lab 5 - Fantasy Creatures API
+description: Fantasy Creatures API running on port 5000
+order: 5000

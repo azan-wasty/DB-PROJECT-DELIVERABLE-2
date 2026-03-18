@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get All Races
+method: GET
+url: '{{baseUrl}}:5000/race'
+order: 1000

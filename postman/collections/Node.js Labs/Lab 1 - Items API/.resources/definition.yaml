@@ -1,0 +1,4 @@
+$kind: collection
+name: Lab 1 - Items API
+description: Items API running on port 6767
+order: 1000

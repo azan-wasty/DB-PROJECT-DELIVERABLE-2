@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Creatures
+method: GET
+url: '{{baseUrl}}:5000/creatures'
+order: 1000

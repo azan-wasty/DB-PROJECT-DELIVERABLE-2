@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+		"name": "Node.js Labs - Azan Wasty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lab 1 - Items API",
+			"item": [
+				{
+					"name": "Get All Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:6767/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "6767",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e"
+				}
+			],
+			"_postman_id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
+		},
+		{
+			"name": "Lab 2 - Customers API",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"customer_id\": 1,\n\t\"cust_name\": \"John Doe\",\n\t\"city\": \"New York\",\n\t\"grade\": 1,\n\t\"salesman_id\": 101\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}:5000/create_customer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"create_customer"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a"
+				}
+			],
+			"_postman_id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b"
+		},
+		{
+			"name": "Lab 3 - Movies API",
+			"item": [
+				{
+					"name": "Get Sci-Fi Movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/sci-fi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"sci-fi"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c"
+				},
+				{
+					"name": "Get Sci-Fi Movies After Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/sci-fi?after=2000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"sci-fi"
+							],
+							"query": [
+								{
+									"key": "after",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d"
+				}
+			],
+			"_postman_id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e"
+		},
+		{
+			"name": "Lab 4 - Race API",
+			"item": [
+				{
+					"name": "Get All Races",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/race",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"race"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f"
+				},
+				{
+					"name": "Get Races by Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/race?location=Monaco",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"race"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Monaco"
+								}
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a"
+				}
+			],
+			"_postman_id": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
+		},
+		{
+			"name": "Lab 5 - Fantasy Creatures API",
+			"item": [
+				{
+					"name": "Get Creatures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/creatures",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"creatures"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c"
+				},
+				{
+					"name": "Get Ingredients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/ingredients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"ingredients"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d"
+				},
+				{
+					"name": "Get Powers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/powers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"powers"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e"
+				},
+				{
+					"name": "Get Family Relations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/familyrelations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"familyrelations"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f"
+				},
+				{
+					"name": "Get Fights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/fights",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"fights"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9f0a"
+				}
+			],
+			"_postman_id": "e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9f0a1b"
+		},
+		{
+			"name": "Lab 6 - Hunters API",
+			"item": [
+				{
+					"name": "Get Missions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/missions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"missions"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "f8a9b0c1-d2e3-4f4a-5b6c-7d8e9f0a1b2c"
+				},
+				{
+					"name": "Get Beyonders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/beyonders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"beyonders"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "a9b0c1d2-e3f4-4a5b-6c7d-8e9f0a1b2c3d"
+				},
+				{
+					"name": "Get Hunters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/hunters",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"hunters"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "b0c1d2e3-f4a5-4b6c-7d8e-9f0a1b2c3d4e"
+				},
+				{
+					"name": "Get Artifacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}:5000/artifacts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"port": "5000",
+							"path": [
+								"artifacts"
+							]
+						}
+					},
+					"response": [],
+					"_postman_id": "c1d2e3f4-a5b6-4c7d-8e9f-0a1b2c3d4e5f"
+				}
+			],
+			"_postman_id": "d2e3f4a5-b6c7-4d8e-9f0a-1b2c3d4e5f6a"
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost",
+			"type": "string"
+		}
+	]
+}

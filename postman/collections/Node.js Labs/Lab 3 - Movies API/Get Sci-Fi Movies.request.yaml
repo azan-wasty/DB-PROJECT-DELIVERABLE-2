@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Sci-Fi Movies
+method: GET
+url: '{{baseUrl}}:5000/sci-fi'
+order: 1000

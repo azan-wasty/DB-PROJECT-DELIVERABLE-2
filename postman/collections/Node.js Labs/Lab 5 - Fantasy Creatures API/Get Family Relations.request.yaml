@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Family Relations
+method: GET
+url: '{{baseUrl}}:5000/familyrelations'
+order: 4000

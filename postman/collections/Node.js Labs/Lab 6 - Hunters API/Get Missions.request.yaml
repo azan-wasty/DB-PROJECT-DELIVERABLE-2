@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Missions
+method: GET
+url: '{{baseUrl}}:5000/missions'
+order: 1000

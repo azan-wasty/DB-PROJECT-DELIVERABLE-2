@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Fights
+method: GET
+url: '{{baseUrl}}:5000/fights'
+order: 5000
